@@ -1,0 +1,12 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+gradle
+
+*.jar
+*.class
+
+build/**/generated
+build/**/publications
+build/**/reports
+build/**/test-result
+build/**/tmp
