@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.epam.esm.webservice'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-websocket:2.5.2'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.5.2'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
